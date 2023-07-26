@@ -17,7 +17,7 @@ contract dynNFT is ERC721, ERC721URIStorage, Ownable {
         "https://bafkreigyzkba5myht24jwxw3wko2vejvjfzlgzaoyionztzek7wyvhrj2e.ipfs.nftstorage.link"
     ];
 
-    constructor() ERC721("dNFTs", dNFT") {
+    constructor() ERC721("dNFTs", "dNFT") {
     }
 
     function safeMint(address to) public onlyOwner {
